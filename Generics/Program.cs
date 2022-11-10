@@ -6,18 +6,19 @@ namespace Generics
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Please Enter The First Value");
+            float firstValue = Convert.ToSingle(Console.ReadLine());
 
-            Console.WriteLine("Maximum Interger Number is");
-            int output = MaximumNumber.MaximumNum(15, 25, 35);
+            Console.WriteLine("Please Enter The Second Value");
+            float secondValue = Convert.ToSingle(Console.ReadLine());
+
+            Console.WriteLine("Please Enter The Third Value");
+            float thirdValue = Convert.ToSingle(Console.ReadLine());
+
+            float output = MaximumFloatNumber.MaximumFloatNum(firstValue, secondValue, thirdValue);
+            Console.WriteLine("Maximum Float Number is");
             Console.WriteLine(output);
 
-            Console.WriteLine("Maximum Double Number is");
-            double output1 = MaximumNumber.MaximumNum(15.5, 25.5, 35.5);
-            Console.WriteLine(output1);
-
-            Console.WriteLine("Maximum String Number is");
-            string output2 = MaximumNumber.MaximumNum("abc", "xyz", "pqr");
-            Console.WriteLine(output2);
         }
 
     }
