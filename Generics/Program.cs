@@ -7,19 +7,12 @@ namespace Generics
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Please Enter The First Value");
-            string firstValue = Console.ReadLine(); //Taking input From User
-
-            Console.WriteLine("Please Enter The Second Value");
-            string secondValue = Console.ReadLine(); //Taking input From User
-
-            Console.WriteLine("Please Enter The Third Value");
-            string thirdValue = Console.ReadLine(); //Taking input From User
-
-            string output = MaximumStringNumber.MaximumStringNum(firstValue, secondValue, thirdValue);
-            Console.WriteLine("Maxmimum string value is:");
-            Console.WriteLine(output);
-
+            int output = MaximumNumberInGenerics.GetMaximum<int>(15, 25, 35);
+            Console.WriteLine($"max={output}");
+            float output1 = MaximumNumberInGenerics.GetMaximum<float>(15.5f,35.5f,25.5f);
+            Console.WriteLine($"max={output1}");
+            string output2 = MaximumNumberInGenerics.GetMaximum<string>("abc", "xyz", "pqr");
+            Console.WriteLine($"max={output2}");
         }
 
     }
