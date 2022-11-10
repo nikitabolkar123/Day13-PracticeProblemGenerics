@@ -4,11 +4,10 @@ using System.Text;
 
 namespace Generics
 {
-    internal class MaximumFloatNumber
+    public class MaximumStringNumber
     {
 
-
-        public static float MaximumFloatNum(float firstValue, float secondValue, float thirdValue)
+        public static string MaximumStringNum(string firstValue, string secondValue, string thirdValue)
         {
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0)
 
@@ -29,4 +28,3 @@ namespace Generics
 
     }
 }
-   
